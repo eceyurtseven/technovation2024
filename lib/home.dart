@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:technovation2024/advertisement.dart';
-import 'package:technovation2024/maps.dart';
+import 'package:technovation2024/calculator/calculator.dart';
+import 'package:technovation2024/maps/air_map.dart';
+import 'package:technovation2024/maps/plant_map.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -86,15 +88,16 @@ class _HomePageState extends State<HomePage> {
                     child: Text("News")),
                 TextButton(
                     onPressed: () {
-                      //final router = ref.watch(routerProvider);
-                      //router.push(PitScoutingPage.path);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AirMap()));
                     },
                     child: Text("Air Quality Data")),
                 TextButton(
                     onPressed: () {
-                      /*Navigator.push(
+                      Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MapSample())); */
+                        MaterialPageRoute(builder: (context) => PlantMap()));
                     },
                     child: Text("Tree Planting Map")),
                 TextButton(
@@ -111,8 +114,9 @@ class _HomePageState extends State<HomePage> {
                     child: Text("NGO Cooperation")),
                 TextButton(
                     onPressed: () {
-                      //final router = ref.watch(routerProvider);
-                      //router.push(PitScoutingsPage.path);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Calculator()));
                     },
                     child: Text("CO2 / O2 Calculator")),
               ]),
