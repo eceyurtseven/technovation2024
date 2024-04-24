@@ -35,8 +35,13 @@ class _AirMapState extends State<AirMap> {
         padding: EdgeInsets.only(left: 10, right: 10, top: 30),
         child: Column(
           children: [
-
+            Icon(
+              Icons.air,
+              size: 150,
+              color: Colors.green,),
+              SizedBox(height: 20,),
             DropdownButton(
+              iconSize: 40,
               value: city,
               items: [
                 DropdownMenuItem(
@@ -63,15 +68,15 @@ class _AirMapState extends State<AirMap> {
                 if (city == "Istanbul")
                   Image.asset(
                     "lib/maps/photos/istanbul_air.png",
-                    height: 300,
+                    height: 250,
                   )
                 else if (city == "Houston")
                   Image.asset("lib/maps/photos/houston_air.png",
-                    height: 300,
+                    height: 250,
                   )
                 else if (city == "Seville")
                   Image.asset("lib/maps/photos/seville_air.png",
-                  height: 300,
+                  height: 250,
                 )
                   
               ],

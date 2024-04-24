@@ -37,12 +37,12 @@ class _CalculatorState extends State<Calculator> {
           children: [
             SizedBox(
               width: double.infinity,
-              height: 360,
+              height: 408.5, //TODO: change here
               child: ElevatedButton(
                 onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => O2()));
+                        MaterialPageRoute(builder: (context) => OxygenGainCalculator()));
                     },
                 child: Text("O2"),
                 style: ElevatedButton.styleFrom(
@@ -59,12 +59,12 @@ class _CalculatorState extends State<Calculator> {
               alignment: Alignment.bottomCenter,
               child: SizedBox(
                 width: double.infinity,
-                height: 360,
+                height: 408.5, //TODO: change here
                 child: ElevatedButton(
                    onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => CO2()));
+                          MaterialPageRoute(builder: (context) => CarbonFootprintCalculator()));
                       }, 
                   child: Text("CO2"),
                   style: ElevatedButton.styleFrom(

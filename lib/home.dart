@@ -3,6 +3,8 @@ import 'package:technovation2024/advertisement.dart';
 import 'package:technovation2024/calculator/calculator.dart';
 import 'package:technovation2024/maps/air_map.dart';
 import 'package:technovation2024/maps/plant_map.dart';
+import 'package:technovation2024/news.dart';
+import 'package:technovation2024/ngo.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -81,11 +83,18 @@ class _HomePageState extends State<HomePage> {
                     child: Text("AdTree")),
                 TextButton(
                     onPressed: () {
-                        /*Navigator.push(
+                      Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) =>  const ScoutingData())); */
+                        MaterialPageRoute(builder: (context) => RecyclingPage()));
                     },
                     child: Text("News")),
+                 TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Calculator()));
+                    },
+                    child: Text("CO2 / O2 Calculator")),
                 TextButton(
                     onPressed: () {
                       Navigator.push(
@@ -108,17 +117,11 @@ class _HomePageState extends State<HomePage> {
                     child: Text("AI Tree Identification")),
                 TextButton(
                     onPressed: () {
-                      //final router = ref.watch(routerProvider);
-                      //router.push(PitScoutingsPage.path);
-                    },
-                    child: Text("NGO Cooperation")),
-                TextButton(
-                    onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Calculator()));
+                        MaterialPageRoute(builder: (context) => NGO()));
                     },
-                    child: Text("CO2 / O2 Calculator")),
+                    child: Text("NGO Cooperation")),
               ]),
         ],
       ),

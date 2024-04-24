@@ -74,6 +74,11 @@ flutter:
    - lib/maps/photos/istanbul_air.png
    - lib/maps/photos/houston_air.png
    - lib/maps/photos/seville_air.png
+   - lib/calculator/car.png
+   - lib/calculator/gas.png
+   - lib/calculator/electric.png
+   - lib/recycling.png
+   - lib/un.png
 
 
 

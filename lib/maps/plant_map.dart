@@ -36,8 +36,14 @@ class PlantMapState extends State<PlantMap> {
         padding: EdgeInsets.only(left: 10, right: 10, top: 30),
         child: Column(
           children: [
-
+            Icon(
+              Icons.location_on,
+              size: 150,
+              color: Colors.green,
+            ),
+            SizedBox(height: 20,),
             DropdownButton(
+              iconSize: 40,
               value: city,
               items: [
                 DropdownMenuItem(
@@ -59,6 +65,7 @@ class PlantMapState extends State<PlantMap> {
                 });
               },
             ),
+            SizedBox(height: 20,),
             Column(
               children: [
                 if (city == "Istanbul")
